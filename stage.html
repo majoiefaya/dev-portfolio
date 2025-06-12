@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Socializus - Détails du Projet | Portfolio de FAYA lidao Majoie</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#27DEBF',secondary:'#2563eb'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-['Pacifico'] text-primary"></a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-600 hover:text-primary transition-colors">Accueil</a>
+                <a href="index.html#competences" class="text-gray-600 hover:text-primary transition-colors">Compétences</a>
+                <a href="index.html#projets" class="text-gray-600 hover:text-primary transition-colors font-medium">Projets</a>
+                <a href="index.html#contact" class="text-gray-600 hover:text-primary transition-colors">Contact</a>
+            </div>
+            <button id="mobileMenuButton" class="md:hidden w-10 h-10 flex items-center justify-center text-gray-500">
+                <i class="ri-menu-line ri-lg"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden bg-white shadow-lg absolute w-full">
+                <div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
+                    <a href="index.html" class="text-gray-600 hover:text-primary transition-colors py-2">Accueil</a>
+                    <a href="index.html#competences" class="text-gray-600 hover:text-primary transition-colors py-2">Compétences</a>
+                    <a href="index.html#projets" class="text-gray-600 hover:text-primary transition-colors py-2 font-medium">Projets</a>
+                    <a href="index.html#contact" class="text-gray-600 hover:text-primary transition-colors py-2">Contact</a>
+                </div>
+            </div>
+    </nav>
+
+    <!-- Retour à la liste des projets -->
+    <div class="container mx-auto px-4 py-6">
+        <a href="index.html#projects" class="inline-flex items-center text-primary hover:text-primary/80 transition-colors">
+            <i class="ri-arrow-left-line ri-lg mr-2"></i>
+            <span>Retour aux projets</span>
+        </a>
+    </div>
+
+    <!-- En-tête du projet -->
+    <header class="container mx-auto px-4 py-6">
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Socializus</h1>
+        <div class="flex flex-wrap gap-3 mb-6">
+            <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">React</span>
+            <span class="bg-yellow-100 text-yellow-800 text-sm font-medium px-3 py-1 rounded-full">React-Native</span>
+            <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Node.js</span>
+            <span class="bg-purple-100 text-purple-800 text-sm font-medium px-3 py-1 rounded-full">MongoDB</span>
+        </div>
+    </header>
+
+    <!-- Image principale du projet -->
+    <section class="container mx-auto px-4 mb-12">
+            <figure class="rounded-lg overflow-hidden shadow-lg max-h-80">
+                <img src="assets/images/stage/socializus-main-2.png" alt="Socializus Project" class="w-full h-80 object-cover" width="1000" height="320" />
+                <figcaption class="text-center text-gray-600 mt-2">Image principale du projet Socializus</figcaption>
+            </figure>
+    </section>
+
+    <!-- Informations du projet et traces -->
+    <section class="container mx-auto px-4 mb-16">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Colonne de gauche (2/3) : Informations principales + Traces -->
+         <div class="md:col-span-2 flex flex-col gap-6">
+   <div class="bg-white rounded-lg shadow-sm p-6 flex-1">
+    <!-- Présentation du projet -->
+    <h2 class="text-2xl font-bold text-gray-800 mb-4">Présentation du projet Socializus</h2>
+    <p class="text-gray-700 mb-6">
+        Lors de mon stage au sein de l'ONDRH, j'ai été chargé de l'optimisation de l'application **Socializus**, ainsi que de l'amélioration de son expérience utilisateur.
+    </p>
+    <p class="text-gray-700 mb-6">
+        L'objectif de cette plateforme est de centraliser plusieurs fonctionnalités clés visant à améliorer l'interaction entre ses utilisateurs :
+    </p>
+    <ul class="list-disc pl-5 text-gray-700 mb-6">
+        <li>Permettre la création d'activités dans n'importe quel lieu.</li>
+        <li>Faciliter les échanges entre utilisateurs de différentes langues.</li>
+        <li>Mettre en place un système de classement pour motiver la participation active.</li>
+        <li>Aider à la rencontre de nouveaux amis en ligne.</li>
+    </ul>
+    <p class="text-gray-700 mb-6">
+        J'ai réalisé ces améliorations après une formation modulaire de deux semaines sur les technologies utilisées pour le projet.
+    </p>
+    <h3 class="text-xl font-semibold text-gray-800 mb-3">Les actions techniques mises en place comprennent :</h3>
+    <div class="mb-6">
+        <div class="mb-4">
+            <h4 class="font-medium text-gray-800 mb-1">Traduction de l'application en 36 langues</h4>
+            <p class="text-gray-700">Mise en place de fichiers JSON permettant de traduire l'application dans 36 langues, facilitant ainsi son utilisation à l'international.</p>
+        </div>
+        <div class="mb-4">
+            <h4 class="font-medium text-gray-800 mb-1">Correction des warnings et des dépréciations, migration vers une nouvelle stack</h4>
+            <p class="text-gray-700">L'application étant basée sur un environnement et une stack obsolètes, des dépréciations et bugs ont été corrigés pour améliorer la stabilité du système.</p>
+        </div>
+        <div>
+            <h4 class="font-medium text-gray-800 mb-1">Amélioration de l'expérience utilisateur</h4>
+            <p class="text-gray-700">Refonte de certaines parties de l'interface et création de nouvelles pages afin d'optimiser l'ergonomie et la fluidité de l'application.</p>
+        </div>
+    </div>
+</div>
+
+    <!-- Bloc traces -->
+    <div class="bg-white rounded-lg shadow-sm p-6 flex-1 mt-8">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">Traces du projet Socializus</h2>
+        <div class="flex flex-col gap-8 mb-6">
+            <!-- Trace 1 : Traduction de l'application -->
+            <figure>
+                <img src="assets/images/stage/traductions/traduction-main-trace.png" alt="Exemple de trace de traduction" class="rounded-lg shadow-md w-full max-w-full" />
+                <figcaption class="text-center text-gray-600 mt-2 font-semibold"><u>1. Traduction multilingue de l'application</u></figcaption>
+                <p class="text-black mt-2">
+                    <strong>Commentaire :</strong> La figure <u>Traduction multilingue de l'application</u> met en avant l'intégration d'une solution multilingue scalable. J'ai conçu et implémenté un pipeline de traduction utilisant des fichiers JSON pour gérer 36 langues. Cette approche a permis de centraliser les traductions, facilitant ainsi l'adaptation dynamique de l'interface en fonction de la langue de l'utilisateur. De plus, le système a été optimisé pour assurer une maintenance facile à long terme, avec des clés techniques réutilisables à travers toute l'application.
+                    <ul class="list-disc pl-5 mt-2">
+                        <li>Conception d'une architecture de fichiers JSON pour une gestion multilingue souple et évolutive</li>
+                        <li>Automatisation des appels aux clés de traduction pour une intégration transparente dans le code</li>
+                        <li>Garantie d'une expérience utilisateur homogène et fluide quel que soit le choix linguistique</li>
+                    </ul>
+                </p>
+            </figure>
+            <h3 class="text-xl font-bold text-gray-800 mt-8 mb-4">Trace 2 – Organisation modulaire du projet et structure des fichiers</h3>
+            <figure>
+                <img src="assets/images/stage/warnings+deprecated/depreciate.png" alt="Migration de React 0.73 à 0.79" class="rounded-lg shadow-md mb-6 md:mb-0" />
+                <figcaption class="text-center text-gray-600 mt-2 font-semibold"><u>2. Exemple de dépréciation</u></figcaption>
+                <p class="text-black mt-2">
+                    <strong>Commentaire :</strong> La figure <u>Exemple de dépréciation</u> illustre ma capacité à diagnostiquer et résoudre les problèmes liés à l’obsolescence des dépendances. J'ai identifié et mis à jour les fonctions dépréciées dans le projet, puis migré la stack technique pour maintenir la compatibilité avec les dernières versions. Cette tâche de maintenance est cruciale pour garantir la sécurité et la stabilité de l'application tout en assurant sa pérennité dans le temps.
+                    <ul class="list-disc pl-5 mt-2">
+                        <li>Audit des dépendances et identification des éléments dépréciés</li>
+                        <li>Refactoring du code pour assurer la compatibilité avec les versions récentes</li>
+                        <li>Tests fonctionnels pour valider la migration et garantir la stabilité du projet</li>
+                    </ul>
+                </p>
+            </figure>
+            <figure>
+                <img src="assets/images/stage/warnings+deprecated/build-gradle.png" alt="Migration de React 0.73 à 0.79" class="rounded-lg shadow-md mb-6 md:mb-0" />
+                <figcaption class="text-center text-gray-600 mt-2 font-semibold"><u>3. Migration du projet</u></figcaption>
+                <p class="text-black mt-2">
+                    <strong>Commentaire :</strong> La figure <u>Migration du projet</u> met en lumière l'adaptation des fichiers de configuration, comme <code>build.gradle</code>, pour intégrer les nouvelles versions des dépendances. Cette mise à jour est essentielle pour assurer la compatibilité et la sécurité du projet, ainsi que pour éviter d'éventuels conflits de version à l'avenir.
+                </p>
+            </figure>
+            <figure>
+                <img src="assets/images/stage/warnings+deprecated/depreciate-ok.png" alt="Migration de React 0.73 à 0.79" class="rounded-lg shadow-md mb-6 md:mb-0" />
+                <figcaption class="text-center text-gray-600 mt-2 font-semibold"><u>4. Dépréciation résolue</u></figcaption>
+                <p class="text-black mt-2">
+                    <strong>Commentaire :</strong> La figure <u>Dépréciation résolue</u> démontre le succès de la migration : toutes les alertes de dépréciation ont été levées et le projet est désormais prêt pour les développements futurs. Ce processus garantit la stabilité et la sécurité du projet tout en simplifiant les futures mises à jour.
+                </p>
+            </figure>
+            <h3 class="text-xl font-bold text-gray-800 mt-8 mb-4">Trace 3 – Développement de fonctionnalités : page de filtre</h3>
+            <figure class="mb-6 mx-auto max-w-full">
+                <img src="assets/images/stage/page-create/figma-filter.png" style="text-align:center" alt="Figma page de filtre" class="rounded-lg shadow-md max-w-full"/>
+                <figcaption class="text-center text-gray-600 mt-2 font-semibold"><u>5. Figma page de filtre</u></figcaption>
+                <p class="text-black mt-2">
+                    <strong>Commentaire :</strong> La figure <u>Figma page de filtre</u> présente le design de la page de filtrage des activités. J'ai respecté la maquette fournie pour garantir la cohérence graphique et optimiser l'ergonomie de l'interface, en m'assurant que les utilisateurs puissent facilement interagir avec les filtres et trouver ce qu'ils recherchent.
+                </p>
+            </figure>
+            <figure class="mb-6 mx-auto max-w-full">
+                <img src="assets/images/stage/page-create/filter code.png" style="text-align:center" alt="Code page filtre" class="rounded-lg shadow-md max-w-full"/>
+                <figcaption class="text-center text-gray-600 mt-2 font-semibold"><u>6. Code page filtre</u></figcaption>
+                <p class="text-black mt-2">
+                    <strong>Commentaire :</strong> La figure <u>Code page filtre</u> met en avant l'implémentation du code React pour gérer dynamiquement les états des filtres. J'ai créé une méthode optimisée, <code>handleApplyFilter</code>, permettant d'appliquer les choix des utilisateurs en temps réel, ce qui garantit une expérience fluide et réactive.
+                </p>
+            </figure>
+            <figure class="mb-6 mx-auto max-w-full">
+                <img src="assets/images/stage/page-create/bas-page-filter.png" style="text-align:center" alt="Bas de page filtre" class="rounded-lg shadow-md max-w-full"/>
+                <figcaption class="text-center text-gray-600 mt-2 font-semibold"><u>7. Bas de page filtre</u></figcaption>
+                <p class="text-black mt-2">
+                    <strong>Commentaire :</strong> La figure <u>Bas de page filtre</u> montre le résultat final de la page de filtrage, validant à la fois la conformité au design et la robustesse de l'implémentation. Ce travail prouve ma capacité à développer, tester et valider des fonctionnalités avancées dans un environnement professionnel.
+                </p>
+            </figure>
+        </div>
+    </div>
+</div>
+
+            <!-- Colonne de droite (1/3) : Détails techniques et liens -->
+            <div class="space-y-8">
+                <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+                    <h2 class="text-xl font-bold text-gray-800 mb-4">Détails Techniques</h2>
+                    
+                    <div class="mb-6">
+                        <h3 class="font-medium text-gray-800 mb-2">Technologies Utilisées</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <div class="w-8 h-8 flex items-center justify-center text-blue-500 mr-3">
+                                    <i class="ri-php-logo-fill ri-lg"></i>
+                                </div>
+                                <span class="text-gray-700">Node js 20(Backend)</span>
+                            </li>
+                            <li class="flex items-center">
+                                <div class="w-8 h-8 flex items-center justify-center text-green-600 mr-3">
+                                    <i class="ri-database-2-line ri-lg"></i>
+                                </div>
+                                <span class="text-gray-700">Mongo DB (Base de données)</span>
+                            </li>
+                            <li class="flex items-center">
+                                <div class="w-8 h-8 flex items-center justify-center text-indigo-600 mr-3">
+                                    <i class="ri-html5-fill ri-lg"></i>
+                                </div>
+                                <span class="text-gray-700">React/React-Native (Frontend)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-sm p-6">
+                    <h2 class="text-xl font-bold text-gray-800 mb-4">Liens du Projet</h2>
+                    <ul class="space-y-4">
+                        </li>
+                        <li>
+                            <a href="https://socializus.app/" class="flex items-center text-black hover:text-primary/80 transition-colors">
+                                <div class="w-8 h-8 flex items-center justify-center text-green-600 mr-3">
+                                    <i class="ri-global-line ri-lg"></i>
+                                </div>
+                                <span>Voir la démo en ligne</span>
+                            </a>
+                        </li>
+                        <li>
+<a href="mailto:majoiefaya@gmail.com" class="flex items-center text-black hover:text-primary/80 transition-colors">
+<div class="w-8 h-8 flex items-center justify-center text-pink-600 mr-3">
+    <i class="ri-mail-line ri-lg"></i>
+</div>
+                                <span>Contactez-moi</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+     <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p>© FAYA Lidao Majoie – Portfolio – 2025</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="https://www.linkedin.com/in/lidao-majoie-faya-064ba622a/" target="_blank"
+                        class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
+                        <i class="ri-linkedin-line ri-lg"></i>
+                    </a>
+                    <a href="https://github.com/majoiefaya" target="_blank"
+                        class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors"
+                        data-readdy="true">
+                        <i class="ri-github-line ri-lg"></i>
+                    </a>
+                    <a href="mailto:majoiefaya@gmail.com"
+                        class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
+                        <i class="ri-mail-line ri-lg"></i>
+                    </a>
+                    <span class="flex items-center text-white ml-2">
+                        <i class="ri-phone-line ri-lg mr-2"></i>+33 758225308
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/mobileMenu.js"></script>
+
+    <script id="imageGalleryScript">
+        document.addEventListener('DOMContentLoaded', function() {
+            const imageModal = document.getElementById('imageModal');
+            const modalImage = document.getElementById('modalImage');
+            const closeModal = document.getElementById('closeModal');
+            const viewImageButtons = document.querySelectorAll('.view-image-btn');
+            
+            viewImageButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const imgSrc = this.closest('.gallery-image').querySelector('img').src;
+                    modalImage.src = imgSrc;
+                    imageModal.classList.remove('hidden');
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+            
+            closeModal.addEventListener('click', function() {
+                imageModal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            });
+            
+            imageModal.addEventListener('click', function(e) {
+                if (e.target === imageModal) {
+                    imageModal.classList.add('hidden');
+                    document.body.style.overflow = 'auto';
+                }
+            });
+            
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && !imageModal.classList.contains('hidden')) {
+                    imageModal.classList.add('hidden');
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Socializus - Détails du Projet | FAYA Lidao Majoie</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#27DEBF',secondary:'#2563eb'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-['Pacifico'] text-primary"></a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-600 hover:text-primary transition-colors">Accueil</a>
+                <a href="index.html#competences" class="text-gray-600 hover:text-primary transition-colors">Compétences</a>
+                <a href="index.html#projets" class="text-gray-600 hover:text-primary transition-colors font-medium">Projets</a>
+                <a href="index.html#contact" class="text-gray-600 hover:text-primary transition-colors">Contact</a>
+            </div>
+            <button id="mobileMenuButton" class="md:hidden w-10 h-10 flex items-center justify-center text-gray-500">
+                <i class="ri-menu-line ri-lg"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden bg-white shadow-lg absolute w-full">
+                <div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
+                    <a href="index.html" class="text-gray-600 hover:text-primary transition-colors py-2">Accueil</a>
+                    <a href="index.html#competences" class="text-gray-600 hover:text-primary transition-colors py-2">Compétences</a>
+                    <a href="index.html#projets" class="text-gray-600 hover:text-primary transition-colors py-2 font-medium">Projets</a>
+                    <a href="index.html#contact" class="text-gray-600 hover:text-primary transition-colors py-2">Contact</a>
+                </div>
+            </div>
+    </nav>
+
+    <!-- Retour à la liste des projets -->
+    <div class="container mx-auto px-4 py-6">
+        <a href="index.html#projects" class="inline-flex items-center text-primary hover:text-primary/80 transition-colors">
+            <i class="ri-arrow-left-line ri-lg mr-2"></i>
+            <span>Retour aux projets</span>
+        </a>
+    </div>
+
+    <!-- En-tête du projet -->
+    <header class="container mx-auto px-4 py-6">
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Drone audiovisuel à contrôle vocal (SAÉ S5/S6)</h1>
+        <div class="flex flex-wrap gap-3 mb-6">
+            <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Java</span>
+            <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Node.js</span>
+            <span class="bg-purple-100 text-purple-800 text-sm font-medium px-3 py-1 rounded-full">MongoDB</span>
+            <span class="bg-yellow-100 text-yellow-800 text-sm font-medium px-3 py-1 rounded-full">Vue.js</span>
+            <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded-full">Arduino C++</span>
+            <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded-full">Android, Kotlin</span>
+            <span class="bg-pink-100 text-pink-800 text-sm font-medium px-3 py-1 rounded-full">Python</span>
+        </div>
+    </header>
+
+    <!-- Image principale du projet -->
+    <section class="container mx-auto px-4 mb-12">
+            <figure class="rounded-lg overflow-hidden shadow-lg max-h-80">
+                <img src="assets/images/sae/sa-picture.png" alt="Drone audiovisuel" class="w-full h-80 object-cover" width="1000" height="320" />
+                <figcaption class="text-center text-gray-600 mt-2">Image principale du projet Drone audiovisuel à contrôle vocal</figcaption>
+            </figure>
+    </section>
+
+    <!-- Informations du projet -->
+    <section class="container mx-auto px-4 mb-16">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Colonne de gauche - Informations principales -->
+            <div class="md:col-span-2 flex flex-col gap-6">
+                <div class="bg-white rounded-lg shadow-sm p-6 flex-1">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Présentation du projet Drone audiovisuel à contrôle vocal</h2>
+                    <p class="text-gray-700 mb-6">
+                        Ce projet, réalisé dans le cadre de la SAÉ S5/S6, vise à concevoir un drone audiovisuel innovant contrôlable par commandes vocales. L'objectif est de proposer un nouveau produit pour l'entreprise, rendant les fonctionnalités avancées d'un drone professionnel accessibles au grand public et simplifiant la production audiovisuelle, notamment pour les productions à faible ou moyen budget. Ce projet permet également de développer des compétences techniques pointues et de répondre à une problématique réelle tout en visant une excellente note à la SAÉ.
+                    </p>
+                    <ul class="list-disc pl-5 text-gray-700 mb-4">
+                        <li>Proposer de nouveaux produits pour l'entreprise</li>
+                        <li>Offrir les possibilités d'un drone professionnel au grand public</li>
+                        <li>Simplifier la production de films, surtout pour les productions à faible (et moyen) budget</li>
+                        <li>Obtenir une bonne note à la SAÉ, qui compte pour une grosse partie de la note de l'année</li>
+                        <li>Réaliser un projet intéressant, autant dans la réalisation que dans les connaissances utilisées et développées</li>
+                    </ul>
+                    <p class="text-gray-700 mb-4 font-semibold">Description détaillée :</p>
+                    <p class="text-gray-700 mb-4">
+                        Mise en place d’un drone contrôlable notamment par commandes vocales permettant des mouvements précis. Le projet intègre des fonctionnalités spécifiques telles que le suivi d’une personne par reconnaissance faciale et le suivi de chemins précis ou prédéfinis. L’ensemble du système s’appuie sur une architecture logicielle et matérielle moderne, combinant IoT, intelligence artificielle (Python), et interfaces intuitives pour l’utilisateur.
+                    </p>
+                    <ul class="list-disc pl-5 text-gray-700 mb-4">
+                        <li>Contrôle vocal du drone pour piloter les mouvements</li>
+                        <li>Suivi automatique d’une personne grâce à la reconnaissance faciale</li>
+                        <li>Parcours de trajectoires précises ou prédéfinies</li>
+                        <li>Intégration d’une interface utilisateur pour la configuration et le retour vidéo</li>
+                    </ul>
+                </div>
+                <!-- New empty block for user content -->
+<div class="bg-white rounded-lg shadow-sm p-6 flex-1 mt-8">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+        Trace 1 : Architecture Logicielle et Matérielle du Projet Drone Audiovisuel à Contrôle Vocal
+    </h2>
+    <div class="mb-6">
+        <figure>
+            <img src="assets/images/sae/sae_architecture.png" alt="Trace 1 - Architecture Logicielle et Matérielle du Projet Drone Audiovisuel à Contrôle Vocal" class="rounded-lg shadow-md w-full max-w-full" />
+            <figcaption class="text-center text-gray-600 mt-2">Schéma architectural du projet Drone Audiovisuel à Contrôle Vocal illustrant l'intégration matérielle et logicielle</figcaption>
+        </figure>
+    </div>
+    <p class="text-gray-700 mb-4 font-semibold flex items-center gap-2">
+        <i class="ri-architecture-line text-primary"></i>
+        Explication générale du schéma :
+    </p>
+    <p class="text-gray-700 mb-4">
+        Le schéma présenté ici illustre l’architecture complète et intégrée du projet **Drone Audiovisuel à Contrôle Vocal**, développé dans le cadre de la SAÉ. Ce projet vise à créer une solution de drone pilotable entièrement par commande vocale, visant à faciliter la production audiovisuelle, tout en rendant l’utilisation des drones accessible même à des productions à faible budget.
+    </p>
+    <p class="text-gray-700 mb-4 font-semibold flex items-center gap-2">
+        <i class="ri-tools-line text-primary"></i>
+        Analyse détaillée par composants :
+    </p>
+    <ol class="list-decimal pl-5 text-gray-700 mb-4 space-y-4">
+        <li>
+            <strong>Microcontrôleur ESP32 avec capteurs embarqués :</strong><br />
+            Le microcontrôleur ESP32 est l'élément central du système, responsable de la collecte des données des capteurs (orientation, accélération, position GPS) et de la gestion des communications en temps réel.<br />
+            <em>Technologie utilisée :</em> Arduino IDE, ESP32.<br />
+            <em>Rôle précis :</em><br />
+            Capturer en temps réel les données de vol du drone et transmettre ces informations à travers un module Wi-Fi pour un traitement ultérieur.<br />
+            <em>Compétences illustrées :</em> Développement IoT embarqué, gestion de capteurs complexes, programmation réseau.
+        </li>
+        <li>
+            <strong>Serveur Central Java TCP/IP :</strong><br />
+            Le serveur Java central gère la réception des flux de données du microcontrôleur ESP32 via TCP, avec une architecture multithreadée pour permettre la gestion de multiples entrées simultanées.<br />
+            <em>Technologie utilisée :</em> Java, Sockets TCP, IntelliJ IDEA.<br />
+            <em>Rôle précis :</em><br />
+            Assurer une réception robuste des données, effectuer un pré-traitement et transmettre les données à l'API REST pour stockage.<br />
+            <em>Compétences illustrées :</em> Programmation réseau avancée, multithreading, gestion des flux de données.
+        </li>
+        <li>
+            <strong>API REST en Node.js & Base de Données MongoDB :</strong><br />
+            L'API REST en Node.js permet de gérer les requêtes du serveur Java et d'interagir avec la base de données MongoDB, assurant une communication fluide entre les composants.<br />
+            <em>Technologie utilisée :</em> Node.js, Express, MongoDB.<br />
+            <em>Rôle précis :</em><br />
+            Stocker de manière structurée les informations de vol, permettre l'accès à ces données pour les applications frontend, et interagir avec des scripts Python pour l'analyse des commandes vocales.<br />
+            <em>Compétences illustrées :</em> Développement backend, gestion de bases de données non relationnelles, création d'API REST sécurisée.
+        </li>
+        <li>
+            <strong>Serveur d'Analyse Python :</strong><br />
+            Le serveur Python analyse les flux vidéo capturés par le drone ou un appareil mobile, en appliquant des algorithmes de reconnaissance d'image pour interpréter les scènes ou objets suivis par le drone.<br />
+            <em>Technologie utilisée :</em> Python (TensorFlow, OpenCV), Visual Studio Code.<br />
+            <em>Rôle précis :</em><br />
+            Analyser les images transmises par le drone ou l’application mobile, identifier des objets et fournir des informations en temps réel pour ajuster le vol du drone.<br />
+            <em>Compétences illustrées :</em> Traitement d'images, machine learning, vision par ordinateur.
+        </li>
+        <li>
+            <strong>Application Mobile (Android, Kotlin) :</strong><br />
+            L'application mobile permet de gérer la capture d'images, les commandes vocales et de visualiser les données de vol en temps réel.<br />
+            <em>Technologie utilisée :</em> Kotlin, Android Studio.<br />
+            <em>Rôle précis :</em><br />
+            Permettre aux utilisateurs de contrôler le drone à distance via commandes vocales ou visuelles, et d'envoyer des commandes directement depuis leur appareil mobile.<br />
+            <em>Compétences illustrées :</em> Développement mobile natif, gestion des autorisations et des interfaces intuitives.
+        </li>
+        <li>
+            <strong>Frontend Vue.js :</strong><br />
+            Le frontend, développé en Vue.js, permet de visualiser les informations de vol du drone et d'interagir avec les commandes vocales et manuelles.<br />
+            <em>Technologie utilisée :</em> Vue.js, HTML, CSS, JavaScript.<br />
+            <em>Rôle précis :</em><br />
+            Afficher de manière dynamique les statistiques et les commandes de vol, tout en offrant une interface sécurisée et accessible.<br />
+            <em>Compétences illustrées :</em> Développement d'interfaces interactives, gestion des données en temps réel, sécurité frontend.
+        </li>
+    </ol>
+    <p class="text-gray-700 mb-4 font-semibold flex items-center gap-2">
+        <i class="ri-refresh-line text-primary"></i>
+        Flux de Données et Intégration des Composants :
+    </p>
+    <p class="text-gray-700 mb-4">
+        Ce schéma montre comment les données circulent à travers les différents composants du système :
+    </p>
+    <ol class="list-decimal pl-5 text-gray-700 mb-4 space-y-2">
+        <li>Les données sont collectées par les capteurs IoT (ESP32) embarqués dans le drone.</li>
+        <li>Elles sont transmises au serveur Java via TCP/IP pour prétraitement.</li>
+        <li>Les informations sont ensuite envoyées à l'API REST et stockées dans MongoDB.</li>
+        <li>Les images capturées par le drone sont analysées via le serveur Python pour une meilleure précision de vol.</li>
+        <li>L'application mobile permet de visualiser les données et d’envoyer des commandes vocales ou visuelles.</li>
+        <li>Les informations collectées sont affichées en temps réel sur le frontend via Vue.js.</li>
+    </ol>
+    <p class="text-gray-700 mb-4 font-semibold flex items-center gap-2">
+        <i class="ri-book-mark-line text-primary"></i>
+        Synthèse des Compétences Démontrées :
+    </p>
+    <p class="text-gray-700 mb-4">
+        Ce projet démontre les compétences suivantes :
+    </p>
+    <ul class="list-disc pl-5 text-gray-700 mb-4">
+        <li>Développement IoT embarqué pour la collecte et la gestion des données.</li>
+        <li>Création d'API REST sécurisées pour la gestion des communications entre serveurs.</li>
+        <li>Traitement d'images et intelligence artificielle pour améliorer la précision des mouvements du drone.</li>
+        <li>Développement mobile natif et intégration d'API pour une commande à distance.</li>
+        <li>Développement frontend interactif pour une visualisation en temps réel des données de vol.</li>
+    </ul>
+    <p class="text-gray-700 mb-4 font-semibold flex items-center gap-2">
+        <i class="ri-bar-chart-line text-primary"></i>
+        Pertinence dans le contexte professionnel :
+    </p>
+    <p class="text-gray-700 mb-4">
+        L'architecture présentée montre une solution complète et cohérente répondant aux besoins d'une production audiovisuelle accessible. Elle combine des technologies avancées tout en restant suffisamment flexible pour les productions à faible budget.
+    </p>
+    <p class="text-gray-700 mb-4">
+        Ce projet confirme ma capacité à concevoir et à intégrer des systèmes embarqués complexes dans un environnement opérationnel.
+    </p>
+</div>
+
+                <div class="bg-white rounded-lg shadow-sm p-6 flex-1 mt-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+                        Trace 2: Modèle ia pour la stabilisation et le controle du drone
+                    </h2>
+                    <p class="text-gray-700 mb-4 flex items-center gap-2">
+                        <i class="ri-flag-line text-primary"></i>
+                        Savoir-faire visé
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        Concevoir un modele de regression lineaire capable de predire les valeurs de poussés des moteurs des helices pour stabiliser et controler le drone.
+                    </p>
+                    <p class="text-gray-700 mb-4 flex items-center gap-2">
+                        <i class="ri-tools-line text-primary"></i>
+                        Contexte du projet
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        Dans notre projet Drone audiovisuel à contrôle vocal, nous avions besoin d’un serveur capable de recevoir les mesures envoyées en temps réel par plusieurs capteurs (gyroscope,gps,accéleromètre). Chaque capteur étant connecté à un microcontrôleur ESP32, nous avons développé un modèle de regression linéaire capable de predire les valeurs de poussés des moteurs des helices pour stabiliser et controler le drone.
+                    </p>
+                    <p class="text-gray-700 mb-4 flex items-center gap-2">
+                        <i class="ri-image-line text-primary"></i>
+                        Traces (captures commentées)
+                    </p>
+                    <div class="flex flex-col gap-8 mb-6">
+    <figure>
+        <img src="assets/images/sae/ia/sae-trace-1.png" alt="Pipeline ML : préparation et entraînement du modèle" class="rounded-lg shadow-md w-full max-w-full" />
+         <figcaption class="text-center text-gray-600 mt-2 font-semibold"><u>Figure 1 : Entraînement du modèle de prédiction (MLP)</u></figcaption>
+        <p class="text-black mt-2">
+            La figure 1 illustre la phase d’apprentissage supervisé de l’intelligence artificielle embarquée que j’ai conçue pour stabiliser un drone. Cette IA repose sur un modèle de type <code>MLPRegressor</code> (perceptron multicouche), entraîné à partir de données de vol simulées. Le but de cet apprentissage est de prédire les ajustements nécessaires à appliquer aux quatre hélices du drone (<code>delta_h1</code> à <code>delta_h4</code>) en fonction de son orientation, son accélération et sa position GPS.
+            <br><br>
+            La préparation des données suit les bonnes pratiques du machine learning : séparation des variables explicatives et cibles, normalisation via <code>StandardScaler</code>, et séparation du jeu d’entraînement et de test (80/20). J’ai également fixé un état aléatoire pour garantir la reproductibilité de l’expérience.
+            <br><br>
+            Le modèle MLP entraîné ici est doté de deux couches cachées de 64 neurones chacune, ce qui permet de modéliser des relations complexes entre les capteurs et les corrections à effectuer. Ce choix a été validé empiriquement après plusieurs essais. Cette trace montre ma capacité à concevoir, entraîner et valider un modèle prédictif pour une application embarquée temps réel à fort enjeu technique.
+        </p>
+    </figure>
+    <figure>
+        <img src="assets/images/sae/ia/sae-trace-2.png" alt="Évaluation des performances du modèle" class="rounded-lg shadow-md w-full max-w-full" />
+           <figcaption class="text-center text-gray-600 mt-2 font-semibold"><u>Figure 2 : Évaluation du modèle (MAE et R²)</u></figcaption>
+            <p class="text-black mt-2">
+                La figure 2 illustre l’évaluation quantitative des performances du modèle d’IA entraîné pour la stabilisation d’un drone. Deux métriques complémentaires ont été utilisées : la MAE (erreur absolue moyenne) et le coefficient de détermination R². Ces indicateurs permettent d’analyser la précision des prédictions du modèle sur des données jamais vues (test).
+                <br><br>
+                La MAE mesure l’écart moyen entre les valeurs prédites et les valeurs réelles, ce qui donne une idée concrète de la précision de la régulation appliquée aux hélices. Le score R² quant à lui, reflète la capacité du modèle à expliquer la variance des données cibles. Dans ce cas, le score obtenu (0.76) montre que le modèle explique correctement environ 76 % des variations observées, ce qui est satisfaisant pour un système complexe et non linéaire comme celui d’un drone.
+                <br><br>
+                Cette trace est essentielle car elle montre que je ne me contente pas d’entraîner un modèle, mais que je m’assure aussi de sa validité mathématique et technique à l’aide d’outils reconnus dans le domaine du machine learning (scikit-learn). Elle témoigne de ma rigueur méthodologique dans la construction d’un système d’IA embarquée robuste.
+            </p>
+        </figure>
+
+    <figure>
+        <img src="assets/images/sae/ia/sae-trace-2.1.png" alt="Optimisation du modèle" class="rounded-lg shadow-md w-full max-w-full" />
+       <figcaption class="text-center text-gray-600 mt-2 font-semibold"><u>Figure 3 : Optimisation et évaluation du modèle MLP</u></figcaption>
+            <p class="text-black mt-2">
+                La figure 3 illustre deux étapes essentielles du cycle de vie de l’IA embarquée pour le pilotage de drone : l’optimisation du modèle et le test du modèle optimisé. Dans un premier temps, j’ai utilisé la technique de recherche par grille (<code>GridSearchCV</code>) pour tester plusieurs combinaisons d’hyperparamètres (structure du réseau, nombre d’itérations, régularisation alpha). L’objectif est de minimiser l’erreur quadratique moyenne sur un jeu de validation.
+                <br><br>
+                Le meilleur modèle trouvé comporte une architecture <code>(128, 64)</code> et obtient un score d’erreur très faible, ce qui indique une bonne capacité d’adaptation aux données. Dans un second temps, j’évalue ce modèle optimisé sur des données de test non vues. Les résultats montrent une nette amélioration par rapport au modèle initial : la MAE baisse et le score R² augmente, ce qui signifie que le modèle est à la fois plus précis et plus général.
+                <br><br>
+                Cette trace est importante car elle démontre ma capacité à ajuster un modèle de façon rigoureuse, à comprendre l’impact des hyperparamètres, et à interpréter les métriques d’évaluation pour prendre des décisions basées sur des données. Cela prouve aussi ma maîtrise des outils de la librairie scikit-learn pour produire un modèle robuste prêt à être intégré dans un système temps réel.
+            </p>
+        </figure>
+    <figure>
+        <img src="assets/images/sae/ia/sae-trace-3.1.png" alt="Comparaison de plusieurs modèles de régression" class="rounded-lg shadow-md w-full max-w-full" />
+        <figcaption class="text-center text-gray-600 mt-2 font-semibold"><u>Figure 4 : Comparaison de plusieurs modèles de régression</u></figcaption>
+        <p class="text-black mt-2">
+            La figure 4 présente une expérimentation visant à comparer différentes approches de régression pour la prédiction des ajustements d’hélices nécessaires à la stabilisation d’un drone. L’objectif est d’évaluer la robustesse et la précision de plusieurs modèles sur les mêmes données d’entraînement et de test. Les modèles testés incluent un <code>MLPRegressor</code> (réseau de neurones), une <code>RandomForest</code> (forêt aléatoire), un modèle linéaire <code>Ridge</code>, ainsi qu’un <code>XGBoost</code> si la bibliothèque est disponible.
+            <br><br>
+            Chaque modèle est entraîné sur les données normalisées, puis évalué via les métriques MAE et R² aussi bien sur le jeu d'entraînement que sur le jeu de test. Cette démarche permet non seulement de comparer la performance pure, mais aussi de détecter d’éventuels cas de surapprentissage ou de sous-apprentissage.
+            <br><br>
+            Cette trace montre ma capacité à adopter une démarche comparative rigoureuse, en intégrant plusieurs algorithmes d’apprentissage automatique pour sélectionner le plus adapté à la tâche. Cela reflète également ma compréhension des enjeux de généralisation, de complexité des modèles, et de reproductibilité des expériences en IA.
+        </p>
+    </figure>
+    <figure>
+        <img src="assets/images/sae/ia/sae-trace-3.2.png" alt="Test du modèle optimisé" class="rounded-lg shadow-md w-full max-w-full" />
+        <figcaption class="text-center text-gray-600 mt-2 font-semibold"><u>Figure 5 : Tableau comparatif des performances des modèles</u></figcaption>
+        <p class="text-black mt-2">
+            La figure 5 affiche un tableau récapitulatif des performances obtenues par chaque modèle testé sur les jeux d’entraînement et de test. Les résultats sont exprimés à travers deux métriques principales : la MAE (erreur absolue moyenne) et le score R² (coefficient de détermination), ce qui permet une évaluation complète de la précision et de la robustesse de chaque algorithme.
+            <br><br>
+            On observe que le modèle <code>XGBoost</code> présente les meilleures performances globales : une MAE très faible et un score R² très proche de 1, aussi bien en entraînement qu’en test, ce qui témoigne d’une excellente capacité de généralisation. Ce tableau permet aussi de vérifier l’absence de surapprentissage, en comparant les écarts entre les métriques d’apprentissage et celles du test.
+            <br><br>
+            Cette trace illustre ma capacité à analyser et interpréter des résultats expérimentaux de manière critique et synthétique, en sélectionnant le modèle le plus pertinent pour l’application cible (ici, la stabilisation automatique d’un drone). Elle démontre également une bonne maîtrise des outils de reporting dans un projet de machine learning.
+        </p>
+    </figure>
+    <figure>
+        <img src="assets/images/sae/ia/sae-trace-4.1.png" alt="Visualisation comparative des scores" class="rounded-lg shadow-md w-full max-w-full" />
+        <figcaption class="text-center text-gray-600 mt-2 font-semibold"><u>6. Visualisation comparative des scores</u></figcaption>
+        <p class="text-black mt-2">
+            <strong>Commentaire :</strong> Cette figure met en avant ma maîtrise de la data visualisation pour synthétiser et comparer les résultats. <br>
+            <ul class="list-disc pl-5">
+                <li>Présentation claire des performances des modèles,</li>
+                <li>Communication efficace des choix techniques,</li>
+                <li>Justification visuelle du meilleur algorithme pour le pilotage du drone.</li>
+            </ul>
+        </p>
+    </figure>
+    <figure>
+        <img src="assets/images/sae/ia/sae-trace-4.2.png" alt="Validation croisée" class="rounded-lg shadow-md w-full max-w-full" />
+        <figcaption class="text-center text-gray-600 mt-2 font-semibold"><u>7. Validation croisée</u></figcaption>
+        <p class="text-black mt-2">
+            <strong>Commentaire :</strong> Cette trace démontre ma capacité à appliquer des techniques avancées de validation statistique. <br>
+            <ul class="list-disc pl-5">
+                <li>Garantie de la robustesse et de la généralisation du modèle,</li>
+                <li>Exigence de qualité pour un système embarqué critique,</li>
+                <li>Compréhension des enjeux de fiabilité et de sécurité.</li>
+            </ul>
+        </p>
+    </figure>
+
+     <figure>
+        <img src="assets/images/sae/ia/interface_de_test_en_temps_reel.png" alt="Interface de test en temps réel - IA pilotage drone" class="rounded-lg shadow-md w-full max-w-full" />
+        <figcaption class="text-center text-gray-600 mt-2 font-semibold"><u>Figure 8 : Interface de test d’un modèle d’IA embarqué</u></figcaption>
+        <p class="text-black mt-2">
+            La figure 8 ci-dessus illustre le fait que j’ai conçu une interface interactive permettant de tester un modèle d’IA embarqué pour la stabilisation d’un drone. Cette interface simule les données issues de capteurs (orientation, accélération, GPS) et permet d’observer la réaction de l’IA à ces entrées, notamment à travers les valeurs appliquées aux hélices. Elle est donc utilisée pour vérifier le comportement du système **avant** sa mise en conditions réelles.
+            <br><br>
+            Ce travail repose sur des principes fondamentaux de développement logiciel et de machine learning embarqué, tels que : la vérification des entrées capteurs, le pilotage automatisé, la prédiction en temps réel et le contrôle de moteurs (hélices). Dans la figure, on voit que l’utilisateur peut simuler différentes valeurs (pitch, yaw, roll, etc.) et que le modèle MLP choisi est appliqué à ces données pour calculer une correction automatique. En cas de valeur incohérente ou dangereuse, l’interface permet d’observer la réponse du système sans risque matériel.
+            <br><br>
+            Cette trace montre ainsi ma capacité à combiner : le développement frontend (interface fluide), l’intégration de capteurs simulés, et la logique backend (modèle prédictif), pour concevoir un environnement de test rigoureux et fiable, conforme aux exigences d’un système embarqué critique, comme un drone autonome.
+        </p>
+    </figure>
+    <figure>
+        <img src="assets/images/sae/ia/modelisation_3d_3.png" alt="Interface de test en temps réel - IA pilotage drone" class="rounded-lg shadow-md w-full max-w-full" />
+        <figcaption class="text-center text-gray-600 mt-2 font-semibold"><u>Figure 9 : Simulation 3D du drone avec moteurs et vecteurs de force</u></figcaption>
+        <p class="text-black mt-2">
+            La figure 9 présente une simulation 3D du drone, affichant ses composants principaux : le châssis, les moteurs, le module de contrôle et les bras, ainsi que les vecteurs de force générés par les moteurs. Les forces sont visualisées par des flèches orange et la direction de la force de chaque moteur est représentée pour analyser l’équilibre du drone.
+            <br><br>
+            Ce graphique permet de visualiser l'impact de chaque moteur sur le mouvement du drone dans un espace tridimensionnel, en fonction des axes X, Y et Z (lacet, tangage, roulis). L'objectif ici est d'analyser l'effet des corrections générées par le modèle d'IA sur la position du drone et son orientation, en temps réel. Les flèches indiquent les forces appliquées par chaque moteur et leur influence sur la stabilisation du drone.
+            <br><br>
+            Cette trace montre ma capacité à représenter des données complexes de manière interactive et à visualiser l'effet des calculs du modèle sur le comportement physique du drone. Elle illustre également l'intégration de la modélisation physique avec les algorithmes d'IA pour une compréhension visuelle des résultats.
+        </p>
+    </figure>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Colonne de droite - Informations techniques et liens -->
+            <div class="space-y-8">
+                <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+                    <h2 class="text-xl font-bold text-gray-800 mb-4">Informations Techniques</h2>
+                    <p class="text-gray-700 mb-4 font-semibold">Architecture matérielle :</p>
+<ul class="list-disc pl-5 text-gray-700 mb-6">
+    <li class="flex items-center"><i class="ri-compass-3-line ri-lg text-blue-500 mr-3"></i>Capteurs IMU : Roll, Pitch, Yaw (orientation 3D)</li>
+    <li class="flex items-center"><i class="ri-arrow-up-down-line ri-lg text-green-600 mr-3"></i>Accéléromètres : ax, ay, az (accélérations 3 axes)</li>
+    <li class="flex items-center"><i class="ri-map-pin-line ri-lg text-yellow-600 mr-3"></i>GPS : Latitude, Longitude, Altitude</li>
+    <li class="flex items-center"><i class="ri-wifi-line ri-lg text-pink-600 mr-3"></i>Module Wi-Fi de communication TCP/IP</li>
+</ul>
+                    <p class="text-gray-700 mb-4 font-semibold">Architecture logicielle :</p>
+                    <ul class="list-disc pl-5 text-gray-700 mb-6">
+                        <li class="flex items-center">
+                            <i class="ri-server-line ri-lg text-indigo-600 mr-3"></i>
+                            Backend Java multi-threadé (centralisation des données)
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ri-api-line ri-lg text-yellow-600 mr-3"></i>
+                            API REST (Node.js, Express)
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ri-database-2-line ri-lg text-purple-600 mr-3"></i>
+                            Base de données MongoDB avec Mongoose
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ri-vuejs-fill ri-lg text-green-500 mr-3"></i>
+                            Frontend Vue.js pour la visualisation interactive
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ri-smartphone-line ri-lg text-pink-500 mr-3"></i>
+                            Application mobile native Android pour le pilotage du drone
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-sm p-6">
+                    <h2 class="text-xl font-bold text-gray-800 mb-4">Liens du Projet</h2>
+                    <ul class="space-y-4">
+                        <li>
+<a href="https://github.com/majoiefaya/drone-stabilisation-ai-system" target="_blank" class="flex items-center text-black hover:text-primary/80 transition-colors">
+<div class="w-8 h-8 flex items-center justify-center text-blue-500 mr-3">
+    <i class="ri-github-fill ri-lg"></i>
+</div>
+                                <span>Voir le dépôt GitHub</span>
+                            </a>
+                        </li>
+                       
+                        <li>
+<a href="mailto:majoiefaya@gmail.com" class="flex items-center text-black hover:text-primary/80 transition-colors">
+<div class="w-8 h-8 flex items-center justify-center text-pink-600 mr-3">
+    <i class="ri-mail-line ri-lg"></i>
+</div>
+                                <span>Contactez-moi</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+     <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p>© FAYA Lidao Majoie – Portfolio – 2025</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="https://www.linkedin.com/in/lidao-majoie-faya-064ba622a/" target="_blank"
+                        class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
+                        <i class="ri-linkedin-line ri-lg"></i>
+                    </a>
+                    <a href="https://github.com/majoiefaya" target="_blank"
+                        class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors"
+                        data-readdy="true">
+                        <i class="ri-github-line ri-lg"></i>
+                    </a>
+                    <a href="mailto:majoiefaya@gmail.com"
+                        class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
+                        <i class="ri-mail-line ri-lg"></i>
+                    </a>
+                    <span class="flex items-center text-white ml-2">
+                        <i class="ri-phone-line ri-lg mr-2"></i>+33 758225308
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal pour l'affichage des images en grand -->
+    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center p-4 hidden z-[100]">
+        <div class="relative">
+            <img id="modalImage" src="" alt="Image agrandie" class="block object-contain max-w-[calc(100vw-theme(spacing.8))] max-h-[calc(100vh-theme(spacing.8))] lg:max-w-3xl lg:max-h-[85vh]">
+            <button id="closeModal" class="absolute -top-2 -right-2 text-white bg-black bg-opacity-75 rounded-full p-1.5 hover:bg-opacity-100 focus:outline-none z-10">
+                <i class="ri-close-line ri-xl"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="assets/js/mobileMenu.js"></script>
+    <script id="imageGalleryScript">
+        document.addEventListener('DOMContentLoaded', function() {
+            const imageModal = document.getElementById('imageModal');
+            const modalImage = document.getElementById('modalImage');
+            const closeModal = document.getElementById('closeModal');
+            // Sélectionne toutes les images DANS la section principale du contenu et DANS les figures
+            const viewImageButtons = document.querySelectorAll('section.container img, figure img');
+
+            viewImageButtons.forEach(img => {
+                // Exclure les images qui sont déjà des liens ou dans des liens
+                if (img.closest('a')) return;
+
+                img.style.cursor = 'pointer';
+                img.addEventListener('click', function(e) {
+                    e.preventDefault(); // Empêche le comportement par défaut si l'image est dans un lien (même si on essaie de les exclure)
+                    modalImage.src = this.src;
+                    imageModal.classList.remove('hidden');
+                    document.body.style.overflow = 'hidden'; // Empêche le défilement de la page en arrière-plan
+                });
+            });
+
+            // Fonction pour fermer la modale
+            function closeModalFunction() {
+                imageModal.classList.add('hidden');
+                document.body.style.overflow = 'auto'; // Rétablit le défilement
+            }
+
+            closeModal.addEventListener('click', closeModalFunction);
+
+            // Fermer la modale en cliquant à l'extérieur de l'image
+            imageModal.addEventListener('click', function(e) {
+                if (e.target === imageModal) {
+                    closeModalFunction();
+                }
+            });
+
+            // Fermer la modale avec la touche Échap
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && !imageModal.classList.contains('hidden')) {
+                    closeModalFunction();
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

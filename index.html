@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de FAYA Lidao Majoie</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("AaVqb3IhL64FDK4Di");
+        })();
+    </script>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config = { theme: { extend: { colors: { primary: '#27DEBF', secondary: '#2563eb' }, borderRadius: { 'none': '0px', 'sm': '4px', DEFAULT: '8px', 'md': '12px', 'lg': '16px', 'xl': '20px', '2xl': '24px', '3xl': '32px', 'full': '9999px', 'button': '8px' } } } }</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+    <header class="fixed w-full backdrop-blur-md bg-white/80 border-b border-white/20 shadow-lg z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-['Pacifico'] text-primary hover:scale-105 transition-transform duration-300"></a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#accueil" class="relative text-gray-700 hover:text-primary transition-colors group">
+                    <span>Accueil</span>
+                    <div class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></div>
+                </a>
+                <a href="#projets" class="relative text-gray-700 hover:text-primary transition-colors group">
+                    <span>Projets</span>
+                    <div class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></div>
+                </a>
+                <a href="#competences" class="relative text-gray-700 hover:text-primary transition-colors group">
+                    <span>Compétences</span>
+                    <div class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></div>
+                </a>
+                <a href="#contact" class="relative text-gray-700 hover:text-primary transition-colors group">
+                    <span>Contact</span>
+                    <div class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></div>
+                </a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <button id="theme-toggle"
+                    class="w-10 h-10 flex items-center justify-center text-gray-700 hover:text-primary transition-colors">
+                    <i class="ri-sun-line ri-lg"></i>
+                </button>
+                <button id="mobile-menu-button"
+                    class="md:hidden w-10 h-10 flex items-center justify-center text-gray-700 hover:text-primary transition-colors">
+                    <i class="ri-menu-line ri-lg"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 px-4 py-2">
+            <div class="flex flex-col space-y-3 py-2">
+                <a href="#accueil" class="text-gray-700 hover:text-primary transition-colors py-2">Accueil</a>
+                <a href="#projets" class="text-gray-700 hover:text-primary transition-colors py-2">Projets</a>
+                <a href="#competences" class="text-gray-700 hover:text-primary transition-colors py-2">Compétences</a>
+                <a href="#contact" class="text-gray-700 hover:text-primary transition-colors py-2">Contact</a>
+            </div>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section id="accueil" class="min-h-screen w-full flex items-center justify-center pt-32 pb-16 relative bg-[#F5F7FA] overflow-hidden">
+      <div class="w-full max-w-4xl flex flex-col items-center text-center py-16 px-6 mx-auto animate-fadeIn">
+        <!-- Photo de profil -->
+        <div class="w-40 h-40 rounded-full overflow-hidden mb-8 shadow-xl mx-auto border-4 border-blue-800 animate-float-1 transition-transform duration-500">
+          <img src="assets/images/personal/my_picture.png" alt="Lidao Majoie Faya" class="w-full h-full object-cover object-top">
+        </div>
+        <!-- Nom -->
+        <h1 class="text-5xl font-extrabold mb-3 text-gray-900 montserrat tracking-tight animate-fadeInDown">Lidao Majoie Faya</h1>
+        <!-- Sous-titre -->
+        <h2 class="text-xl text-gray-600 mb-2 font-medium animate-fadeInDown" style="animation-delay:0.1s;">Étudiant en Bachelor Universitaire de Technologie | Aspirant Data & IA | Développeur Fullstack</h2>
+        <!-- Localisation -->
+        <div class="flex items-center justify-center mb-6 text-gray-500 text-lg animate-fadeInDown" style="animation-delay:0.2s;">
+          <i class="ri-map-pin-line mr-2"></i>
+          <span>Belfort, France</span>
+        </div>
+        <!-- Phrase d'accroche -->
+        <p class="text-blue-800 text-xl font-semibold mb-10 animate-fadeInDown" style="animation-delay:0.3s;">Je transforme les données en solutions intelligentes.</p>
+        <!-- Boutons d'action -->
+        <div class="flex flex-wrap justify-center gap-6 animate-fadeInDown" style="animation-delay:0.4s;">
+          <a href="assets/documents/CV – Alternance_Data Engineer_FAYA_Lidao_Majoie.pdf" class="bg-blue-800 text-white px-8 py-4 rounded-lg flex items-center font-medium shadow-md hover:bg-blue-900 transition-colors duration-300" aria-label="Télécharger le portfolio">
+            <i class="ri-download-line mr-2"></i> Télécharger CV
+          </a>
+          <a href="https://www.linkedin.com/in/lidao-majoie-faya-064ba622a/" target="_blank" class="bg-[#1A237E] text-white px-8 py-4 rounded-lg flex items-center font-medium shadow-md hover:bg-[#0D133D] transition-colors duration-300" aria-label="LinkedIn">
+            <i class="ri-linkedin-fill mr-2"></i> LinkedIn
+          </a>
+          <a href="https://www.datascienceportfol.io/majoiefaya" target="_blank" class="bg-blue-600 text-white px-8 py-4 rounded-lg flex items-center font-medium shadow-md hover:bg-blue-700 transition-colors duration-300" aria-label="Portfolio Data Science">
+            <i class="ri-bar-chart-line mr-2"></i> Portfolio Data Science
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 bg-white">
+      <div class="container mx-auto max-w-5xl">
+        <h2 class="text-4xl font-bold text-center mb-16 montserrat animate-fadeInDown">À propos de moi</h2>
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="flex flex-col items-center animate-fadeInLeft">
+            <div class="w-32 h-32 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-4 shadow-lg border-4 border-blue-800 animate-float-2">
+              <span class="text-5xl font-bold text-blue-800 select-none">FL</span>
+            </div>
+          </div>
+          <div class="animate-fadeInRight">
+            <p class="text-gray-700 mb-6 leading-relaxed">
+              Passionné par la <span class="text-blue-800 font-medium">double compétence développement et data science</span>, je combine rigueur analytique et créativité pour transformer les données en solutions concrètes et innovantes.
+            </p>
+            <p class="text-gray-700 mb-6 leading-relaxed">
+              Mon parcours académique et mes expériences professionnelles m'ont permis de développer une expertise technique solide, tout en cultivant une vision stratégique des enjeux liés aux données et à l'intelligence artificielle.
+            </p>
+            <p class="text-gray-700 mb-8 leading-relaxed">
+              Mon objectif est de devenir <span class="text-blue-800 font-medium">Data Scientist</span> afin d'apporter des solutions innovantes permettant de créer de la valeur à travers l'analyse et l'exploitation intelligentes des données.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a href="https://github.com/majoiefaya" target="_blank" class="bg-gray-800 text-white px-6 py-3 rounded-lg flex items-center hover:bg-gray-700 transition-colors duration-300">
+                <i class="ri-github-fill mr-2"></i> GitHub
+              </a>
+              <a href="#contact" class="bg-blue-50 text-blue-800 px-6 py-3 rounded-lg flex items-center hover:bg-blue-100 transition-colors duration-300">
+                <i class="ri-mail-line mr-2"></i> Me contacter
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <style>
+      @keyframes fadeInDown {
+        0% { opacity: 0; transform: translateY(-30px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+      .animate-fadeInDown { animation: fadeInDown 1s cubic-bezier(.4,0,.2,1) both; }
+      @keyframes fadeInLeft {
+        0% { opacity: 0; transform: translateX(-40px); }
+        100% { opacity: 1; transform: translateX(0); }
+      }
+      .animate-fadeInLeft { animation: fadeInLeft 1.2s cubic-bezier(.4,0,.2,1) both; }
+      @keyframes fadeInRight {
+        0% { opacity: 0; transform: translateX(40px); }
+        100% { opacity: 1; transform: translateX(0); }
+      }
+      .animate-fadeInRight { animation: fadeInRight 1.2s cubic-bezier(.4,0,.2,1) both; }
+      @keyframes float-1 {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-12px); }
+      }
+      .animate-float-1 { animation: float-1 5s ease-in-out infinite; }
+      @keyframes float-2 {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(10px); }
+      }
+      .animate-float-2 { animation: float-2 6s ease-in-out infinite; }
+    </style>
+    <section id="projets" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 section-fade">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Mes Projets</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Découvrez une sélection de projets sur lesquels j'ai
+                    travaillé pendant mon parcours universitaire et professionel.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <!-- Projet 1 -->
+                <div class="project-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl group border border-gray-100"
+                    data-project="1">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="assets/images/sae/ia/modelisation_for_concept.png"
+                            alt="SAE Project"
+                            class="project-image w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <a href="sae.html"
+                            class="absolute inset-0 flex items-center justify-center bg-primary/90 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all duration-300 text-white font-medium">
+                            <span class="flex items-center">
+                                <i class="ri-eye-line mr-2"></i>
+                                Voir détails
+                            </span>
+                        </a>
+                        <!-- Badge de statut -->
+                        <div class="absolute top-4 left-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">
+                            Universitaire
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
+                            Drone audiovisuel à contrôle vocal (SAÉ)
+                        </h3>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tech-tag bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-medium">Java</span>
+                            <span class="tech-tag bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-medium">Android</span>
+                            <span class="tech-tag bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-xs font-medium">MongoDB</span>
+                            <span class="tech-tag bg-red-100 text-red-800 px-3 py-1 rounded-full text-xs font-medium">Node.js</span>
+                            <span class="tech-tag bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-xs font-medium">Vue.js</span>
+                            <span class="tech-tag bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-medium">Python</span>
+                        </div>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            Projet universitaire visant à mettre en place un drone contrôlable notamment par commandes vocales
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center text-sm text-gray-500">
+                                <i class="ri-calendar-line mr-1"></i>
+                                <span>2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projet 2 -->
+                <div class="project-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl group border border-gray-100"
+                    data-project="2">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="assets/images/stage/socializus-main.png"
+                            alt="Stage"
+                            class="project-image w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <a href="stage.html"
+                            class="absolute inset-0 flex items-center justify-center bg-primary/90 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all duration-300 text-white font-medium">
+                            <span class="flex items-center">
+                                <i class="ri-eye-line mr-2"></i>
+                                Voir détails
+                            </span>
+                        </a>
+                        <!-- Badge de statut -->
+                        <div class="absolute top-4 left-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-medium">
+                            Stage
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Socializus (Stage)</h3>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tech-tag bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-medium">React</span>
+                            <span class="tech-tag bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-medium">React-Native</span>
+                            <span class="tech-tag bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-xs font-medium">Node js</span>
+                            <span class="tech-tag bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-xs font-medium">Mongo Db</span>
+                        </div>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            Optimisation et amélioration d'une application de réseau social permettant de connecter les internationaux.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center text-sm text-gray-500">
+                                <i class="ri-calendar-line mr-1"></i>
+                                <span>2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </section>
+   <section id="formations" class="py-20 px-4 bg-gray-50">
+<div class="container mx-auto max-w-5xl">
+<h2 class="text-3xl md:text-4xl font-bold text-center mb-16 montserrat" data-aos="fade-up">Formations</h2>
+<div class="relative pl-8 md:pl-12 max-w-3xl mx-auto">
+<div class="absolute left-0 top-0 bottom-0 w-0.5 bg-gray-200"></div>
+
+<div class="timeline-item relative mb-16 pl-8" data-aos="fade-up" data-aos-delay="200">
+<div class="timeline-dot"></div>
+<div class="card bg-white p-6 rounded-lg shadow-md">
+<div class="flex items-center mb-4">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary mr-4">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-code-box-line"></i>
+</div>
+</div>
+<div>
+<h3 class="text-xl font-semibold">BUT Informatique</h3>
+<p class="text-gray-600">IUT Belfort | 2020 - 2023</p>
+</div>
+</div>
+<p class="text-gray-700">
+Formation complète en développement logiciel, bases de données, réseaux et architecture des systèmes. Spécialisation en développement d'applications web et mobiles.
+</p>
+</div>
+</div>
+<div class="timeline-item relative pl-8" data-aos="fade-up" data-aos-delay="300">
+<div class="timeline-dot"></div>
+<div class="card bg-white p-6 rounded-lg shadow-md">
+<div class="flex items-center mb-4">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary mr-4">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-terminal-box-line"></i>
+</div>
+</div>
+<div>
+<h3 class="text-xl font-semibold">Licence Génie Logiciel</h3>
+<p class="text-gray-600">IPNET | 2019 - 2020</p>
+</div>
+</div>
+<p class="text-gray-700">
+Formation initiale en génie logiciel couvrant les fondamentaux de la programmation, les algorithmes et les structures de données. Premiers pas dans le développement d'applications.
+</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="competences" class="py-20 px-4 bg-white">
+<div class="container mx-auto max-w-5xl">
+<h2 class="text-3xl md:text-4xl font-bold text-center mb-16 montserrat" data-aos="fade-up">Compétences</h2>
+<div class="grid md:grid-cols-2 gap-12">
+<div data-aos="fade-up" data-aos-delay="100">
+<h3 class="text-xl font-semibold mb-6 flex items-center">
+<div class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center text-primary mr-3">
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-code-s-slash-line"></i>
+</div>
+</div>
+Langages de programmation
+</h3>
+<div class="space-y-5">
+<div>
+<div class="flex justify-between mb-1">
+<span class="text-gray-700">Python</span>
+<span class="text-gray-600">90%</span>
+</div>
+<div class="skill-bar">
+<div class="skill-progress" style="width: 90%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-1">
+<span class="text-gray-700">JavaScript</span>
+<span class="text-gray-600">85%</span>
+</div>
+<div class="skill-bar">
+<div class="skill-progress" style="width: 85%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-1">
+<span class="text-gray-700">Java</span>
+<span class="text-gray-600">75%</span>
+</div>
+<div class="skill-bar">
+<div class="skill-progress" style="width: 75%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-1">
+<span class="text-gray-700">SQL</span>
+<span class="text-gray-600">80%</span>
+</div>
+<div class="skill-bar">
+<div class="skill-progress" style="width: 80%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-1">
+<span class="text-gray-700">R</span>
+<span class="text-gray-600">70%</span>
+</div>
+<div class="skill-bar">
+<div class="skill-progress" style="width: 70%"></div>
+</div>
+</div>
+</div>
+</div>
+<div data-aos="fade-up" data-aos-delay="200">
+<h3 class="text-xl font-semibold mb-6 flex items-center">
+<div class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center text-primary mr-3">
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-database-2-line"></i>
+</div>
+</div>
+Data Science & IA
+</h3>
+<div class="space-y-5">
+<div>
+<div class="flex justify-between mb-1">
+<span class="text-gray-700">Pandas / NumPy</span>
+<span class="text-gray-600">85%</span>
+</div>
+<div class="skill-bar">
+<div class="skill-progress" style="width: 85%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-1">
+<span class="text-gray-700">Scikit-Learn</span>
+<span class="text-gray-600">80%</span>
+</div>
+<div class="skill-bar">
+<div class="skill-progress" style="width: 80%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-1">
+<span class="text-gray-700">TensorFlow / Keras</span>
+<span class="text-gray-600">75%</span>
+</div>
+<div class="skill-bar">
+<div class="skill-progress" style="width: 75%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-1">
+<span class="text-gray-700">Power BI / Tableau</span>
+<span class="text-gray-600">70%</span>
+</div>
+<div class="skill-bar">
+<div class="skill-progress" style="width: 70%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-1">
+<span class="text-gray-700">NLP / Computer Vision</span>
+<span class="text-gray-600">65%</span>
+</div>
+<div class="skill-bar">
+<div class="skill-progress" style="width: 65%"></div>
+</div>
+</div>
+</div>
+</div>
+<div data-aos="fade-up" data-aos-delay="300">
+<h3 class="text-xl font-semibold mb-6 flex items-center">
+<div class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center text-primary mr-3">
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-layout-grid-line"></i>
+</div>
+</div>
+Frameworks & Bibliothèques
+</h3>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-gray-50 p-3 rounded-lg flex items-center">
+<div class="w-8 h-8 flex items-center justify-center text-primary mr-3">
+<i class="ri-reactjs-line"></i>
+</div>
+<span class="text-gray-700">React / React Native</span>
+</div>
+<div class="bg-gray-50 p-3 rounded-lg flex items-center">
+<div class="w-8 h-8 flex items-center justify-center text-primary mr-3">
+<i class="ri-angularjs-line"></i>
+</div>
+<span class="text-gray-700">Angular</span>
+</div>
+<div class="bg-gray-50 p-3 rounded-lg flex items-center">
+<div class="w-8 h-8 flex items-center justify-center text-primary mr-3">
+<i class="ri-django-line"></i>
+</div>
+<span class="text-gray-700">Django</span>
+</div>
+<div class="bg-gray-50 p-3 rounded-lg flex items-center">
+<div class="w-8 h-8 flex items-center justify-center text-primary mr-3">
+<i class="ri-flask-line"></i>
+</div>
+<span class="text-gray-700">Flask</span>
+</div>
+<div class="bg-gray-50 p-3 rounded-lg flex items-center">
+<div class="w-8 h-8 flex items-center justify-center text-primary mr-3">
+<i class="ri-node-js-line"></i>
+</div>
+<span class="text-gray-700">Node.js / Express</span>
+</div>
+<div class="bg-gray-50 p-3 rounded-lg flex items-center">
+<div class="w-8 h-8 flex items-center justify-center text-primary mr-3">
+<i class="ri-bootstrap-line"></i>
+</div>
+<span class="text-gray-700">Bootstrap / Tailwind</span>
+</div>
+</div>
+</div>
+<div data-aos="fade-up" data-aos-delay="400">
+<h3 class="text-xl font-semibold mb-6 flex items-center">
+<div class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center text-primary mr-3">
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-tools-line"></i>
+</div>
+</div>
+Outils & Technologies
+</h3>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-gray-50 p-3 rounded-lg flex items-center">
+<div class="w-8 h-8 flex items-center justify-center text-primary mr-3">
+<i class="ri-database-line"></i>
+</div>
+<span class="text-gray-700">MongoDB / PostgreSQL</span>
+</div>
+<div class="bg-gray-50 p-3 rounded-lg flex items-center">
+<div class="w-8 h-8 flex items-center justify-center text-primary mr-3">
+<i class="ri-git-branch-line"></i>
+</div>
+<span class="text-gray-700">Git / GitHub</span>
+</div>
+<div class="bg-gray-50 p-3 rounded-lg flex items-center">
+<div class="w-8 h-8 flex items-center justify-center text-primary mr-3">
+<i class="ri-cloud-line"></i>
+</div>
+<span class="text-gray-700">AWS / Azure</span>
+</div>
+<div class="bg-gray-50 p-3 rounded-lg flex items-center">
+<div class="w-8 h-8 flex items-center justify-center text-primary mr-3">
+<i class="ri-docker-line"></i>
+</div>
+<span class="text-gray-700">Docker / Kubernetes</span>
+</div>
+<div class="bg-gray-50 p-3 rounded-lg flex items-center">
+<div class="w-8 h-8 flex items-center justify-center text-primary mr-3">
+<i class="ri-terminal-line"></i>
+</div>
+<span class="text-gray-700">Linux / Bash</span>
+</div>
+<div class="bg-gray-50 p-3 rounded-lg flex items-center">
+<div class="w-8 h-8 flex items-center justify-center text-primary mr-3">
+<i class="ri-line-chart-line"></i>
+</div>
+<span class="text-gray-700">Jupyter / Streamlit</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="certifications" class="py-20 px-4 bg-gray-50">
+<div class="container mx-auto max-w-5xl">
+<h2 class="text-3xl md:text-4xl font-bold text-center mb-16 montserrat" data-aos="fade-up">Certifications</h2>
+<div class="grid md:grid-cols-2 gap-8">
+<div class="card bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
+<div class="flex items-center mb-6">
+<div class="w-16 h-16 bg-[#4285F4]/10 rounded-lg flex items-center justify-center mr-4 text-[#4285F4]">
+<div class="w-10 h-10 flex items-center justify-center">
+<i class="ri-google-fill"></i>
+</div>
+</div>
+<div>
+<h3 class="text-xl font-semibold">Google Advanced Data Analytics</h3>
+<p class="text-gray-600">Obtenue en Mars 2023</p>
+</div>
+</div>
+<p class="text-gray-700 mb-6">
+Certification professionnelle avancée couvrant l'analyse de données, les statistiques, le machine learning et la visualisation de données avec les outils Google.
+</p>
+<div class="flex items-center justify-between">
+<span class="text-gray-600 text-sm">Délivrée par Google</span>
+<a href="#" class="text-primary hover:text-primary/80 flex items-center">
+Voir sur Credly
+<div class="w-5 h-5 flex items-center justify-center ml-1">
+<i class="ri-external-link-line"></i>
+</div>
+</a>
+</div>
+</div>
+<div class="card bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
+<div class="flex items-center mb-6">
+<div class="w-16 h-16 bg-[#FF9900]/10 rounded-lg flex items-center justify-center mr-4 text-[#FF9900]">
+<div class="w-10 h-10 flex items-center justify-center">
+<i class="ri-amazon-fill"></i>
+</div>
+</div>
+<div>
+<h3 class="text-xl font-semibold">AWS Cloud Essentials</h3>
+<p class="text-gray-600">En cours d'obtention</p>
+</div>
+</div>
+<p class="text-gray-700 mb-6">
+Formation aux fondamentaux du cloud AWS, incluant les services de calcul, de stockage, de base de données et de déploiement d'applications.
+</p>
+<div class="flex items-center justify-between">
+<span class="text-gray-600 text-sm">Délivrée par Amazon Web Services</span>
+<span class="bg-yellow-100 text-yellow-800 text-xs px-3 py-1 rounded-full">En cours</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="contact" class="py-20 px-4 bg-white">
+<div class="container mx-auto max-w-5xl">
+<h2 class="text-3xl md:text-4xl font-bold text-center mb-16 montserrat" data-aos="fade-up">Contact</h2>
+<div class="grid md:grid-cols-2 gap-12">
+<div data-aos="fade-right" data-aos-delay="100">
+<h3 class="text-2xl font-semibold mb-6">Discutons de votre projet</h3>
+<p class="text-gray-700 mb-8">
+Vous avez un projet data ou développement en tête ? N'hésitez pas à me contacter pour en discuter. Je suis toujours ouvert aux nouvelles opportunités de collaboration.
+</p>
+<div class="space-y-4 mb-8">
+<div class="flex items-center">
+<div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary mr-4">
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-mail-line"></i>
+</div>
+</div>
+<a href="mailto:majoiefaya@gmail.com" class="text-gray-700 hover:text-primary transition-colors">majoiefaya@gmail.com</a>
+</div>
+<div class="flex items-center">
+<div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary mr-4">
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-map-pin-line"></i>
+</div>
+</div>
+<span class="text-gray-700">Belfort, France</span>
+</div>
+</div>
+<div class="flex space-x-4">
+<a href="https://github.com/majoiefaya" target="_blank" class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-gray-700 transition-colors">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-github-fill"></i>
+</div>
+</a>
+<a href="https://www.linkedin.com/in/lidao-majoie-faya-064ba622a/" target="_blank" class="w-12 h-12 bg-[#0A66C2] rounded-full flex items-center justify-center text-white hover:bg-[#0A66C2]/90 transition-colors">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-linkedin-fill"></i>
+</div>
+</a>
+<a href="https://www.datascienceportfol.io/majoiefaya" target="_blank" class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-white hover:bg-secondary/90 transition-colors">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-bar-chart-line"></i>
+</div>
+</a>
+<a href="https://www.buymeacoffee.com" target="_blank" class="w-12 h-12 bg-[#FFDD00] rounded-full flex items-center justify-center text-white hover:bg-[#FFDD00]/90 transition-colors">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-cup-line"></i>
+</div>
+</a>
+</div>
+</div>
+<div data-aos="fade-left" data-aos-delay="200">                <form class="space-y-6" novalidate>
+                    <div>
+                        <label for="name" class="block text-gray-700 mb-2">Nom <span class="text-red-500">*</span></label>
+                        <input type="text" id="name" required aria-required="true" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary" placeholder="Votre nom">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-700 mb-2">Email <span class="text-red-500">*</span></label>
+                        <input type="email" id="email" required aria-required="true" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary" placeholder="Votre email">
+                    </div>
+                    <div>
+                        <label for="subject" class="block text-gray-700 mb-2">Sujet <span class="text-red-500">*</span></label>
+                        <input type="text" id="subject" required aria-required="true" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary" placeholder="Sujet de votre message">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-gray-700 mb-2">Message <span class="text-red-500">*</span></label>
+                        <textarea id="message" rows="5" required aria-required="true" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary" placeholder="Votre message"></textarea>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="custom-checkbox" id="privacyCheckbox" role="checkbox" aria-checked="false" tabindex="0"></div>
+                        <label for="privacyCheckbox" class="ml-3 text-gray-700 cursor-pointer">J'accepte la politique de confidentialité <span class="text-red-500">*</span></label>
+                    </div>
+                    <button type="submit" class="bg-primary text-white w-full px-6 py-3 !rounded-button whitespace-nowrap hover:bg-primary/90 transition-colors">
+                        Envoyer le message
+                    </button>
+                </form>
+</div>
+</div>
+</div>
+</section>
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p>© FAYA Lidao Majoie – Portfolio – 2025</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="https://www.linkedin.com/in/lidao-majoie-faya-064ba622a/" target="_blank"
+                        class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
+                        <i class="ri-linkedin-line ri-lg"></i>
+                    </a>
+                    <a href="https://github.com/majoiefaya" target="_blank"
+                        class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors"
+                        data-readdy="true">
+                        <i class="ri-github-line ri-lg"></i>
+                    </a>
+                    <a href="mailto:majoiefaya@gmail.com"
+                        class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
+                        <i class="ri-mail-line ri-lg"></i>
+                    </a>
+                    <span class="flex items-center text-white ml-2">
+                        <i class="ri-phone-line ri-lg mr-2"></i>+33 758225308
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="assets/js/themeToggle.js"></script>
+    <script src="assets/js/mobileMenu.js"></script>
+    <script src="assets/js/animationScroll.js"></script>
+    <script src="assets/js/projectModals.js"></script>
+    <script src="assets/js/imageModal.js"></script>
+    <script src="assets/js/contactForm.js"></script>
+    <script src="assets/js/typingAnimation.js"></script> <!-- Added new script for typing animation -->
+</body>
+</html>

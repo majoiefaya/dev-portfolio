@@ -1,0 +1,197 @@
+/* Tailwind CSS v3.2.4 | https://tailwindcss.com */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* filepath: c:\Users\othma\Desktop\Portfolio\assets\css\styles.css */
+:root {
+  --color-primary: #4F46E5; /* Indigo from SVG */
+  --color-primary-hover: #3730A3; /* Darker Indigo/Purple from SVG */
+  --color-secondary: #818CF8; /* Medium Light Indigo from SVG */
+  --color-accent: #6366F1; /* Slightly Lighter Indigo from SVG */
+  --color-light-bg: #EEF2FF; /* Very Light Indigo/Almost White from SVG */
+}
+
+/* Common styles extracted from inline CSS in HTML files */
+
+:where([class^="ri-"])::before {
+    content: "\f3c2";
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Consolidated font style */
+    background-color: var(--color-light-bg); /* New background color */
+    scroll-behavior: smooth;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.gallery-image:hover .overlay {
+    opacity: 1;
+}
+
+/* Additional styles from index.html */
+
+/* body { // This rule will be removed as its content is merged above
+    font-family: 'Roboto', sans-serif;
+} */
+
+/* Accessibility improvements */
+a, button {
+    outline-offset: 2px;
+}
+
+a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--color-primary); /* Updated to new primary color */
+    outline-offset: 2px;
+}
+
+.project-card, .gallery-image {
+    cursor: pointer;
+}
+
+.project-card:focus-visible, .gallery-image:focus-visible {
+    outline: 2px solid var(--color-secondary); /* Updated to new secondary color */
+    outline-offset: 2px;
+}
+
+#accueil img {
+    max-height: 600px !important;
+    width: auto !important;
+    height: auto !important;
+    object-fit: cover !important;
+    align-self: center !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-card:hover .project-image {
+    transform: scale(1.05);
+}
+
+.skill-bar-fill {
+    transition: width 1s ease-in-out;
+}
+
+.modal {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--color-accent); /* Updated to new accent color */
+}
+
+.dark {
+    background-color: #121212;
+    color: #f3f4f6;
+}
+
+.dark .bg-white {
+    background-color: #1f2937;
+}
+
+.dark .text-gray-800 {
+    color: #f3f4f6;
+}
+
+.dark .text-gray-700 {
+    color: #e5e7eb;
+}
+
+.dark .text-gray-600 {
+    color: #d1d5db;
+}
+
+.dark .border-gray-200 {
+    border-color: #374151;
+}
+
+.dark .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.4);
+}
+
+.dark .bg-gray-50 {
+    background-color: #1f2937;
+}
+
+.dark .bg-gray-100 {
+    background-color: #374151;
+}
+
+.dark input,
+.dark textarea {
+    background-color: #374151;
+    color: #f3f4f6;
+    border-color: #4b5563;
+}
+
+.section-fade {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.section-fade.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Keyframe animations */
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate-fadeInLeft {
+    animation: fadeInLeft 1s ease forwards;
+}
+
+.animate-fadeInRight {
+    animation: fadeInRight 1s ease forwards;
+}
+
+/* Tailwind Overrides for Primary/Secondary Colors */
+.text-primary { color: var(--color-primary) !important; }
+.bg-primary { background-color: var(--color-primary) !important; }
+.bg-primary:hover { background-color: var(--color-primary-hover) !important; }
+
+.text-secondary { color: var(--color-secondary) !important; }
+.bg-secondary { background-color: var(--color-secondary) !important; }
