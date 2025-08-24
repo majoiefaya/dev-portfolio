@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Application de gestion des évaluations | Portfolio de FAYA Lidao Majoie</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#27DEBF',secondary:'#2563eb'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-['Pacifico'] text-primary"></a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-600 hover:text-primary transition-colors">Accueil</a>
+                <a href="index.html#competences" class="text-gray-600 hover:text-primary transition-colors">Compétences</a>
+                <a href="index.html#projets" class="text-gray-600 hover:text-primary transition-colors font-medium">Projets</a>
+                <a href="index.html#contact" class="text-gray-600 hover:text-primary transition-colors">Contact</a>
+            </div>
+            <button id="mobileMenuButton" class="md:hidden w-10 h-10 flex items-center justify-center text-gray-500">
+                <i class="ri-menu-line ri-lg"></i>
+            </button>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden bg-white shadow-lg absolute w-full">
+            <div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
+                <a href="index.html" class="text-gray-600 hover:text-primary transition-colors py-2">Accueil</a>
+                <a href="index.html#competences" class="text-gray-600 hover:text-primary transition-colors py-2">Compétences</a>
+                <a href="index.html#projets" class="text-gray-600 hover:text-primary transition-colors py-2 font-medium">Projets</a>
+                <a href="index.html#contact" class="text-gray-600 hover:text-primary transition-colors py-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Retour à la liste des projets -->
+    <div class="container mx-auto px-4 py-6">
+        <a href="index.html#projets" class="inline-flex items-center text-primary hover:text-primary/80 transition-colors">
+            <i class="ri-arrow-left-line ri-lg mr-2"></i>
+            <span>Retour aux projets</span>
+        </a>
+    </div>
+    <!-- En-tête du projet -->
+    <header class="container mx-auto px-4 py-6">
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Application de gestion des évaluations</h1>
+        <div class="flex flex-wrap gap-3 mb-6">
+            <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Vue.js</span>
+            <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Vuetify</span>
+            <span class="bg-yellow-100 text-yellow-800 text-sm font-medium px-3 py-1 rounded-full">Node.js</span>
+            <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded-full">Express.js</span>
+            <span class="bg-purple-100 text-purple-800 text-sm font-medium px-3 py-1 rounded-full">MongoDB</span>
+            <span class="bg-gray-100 text-gray-800 text-sm font-medium px-3 py-1 rounded-full">JWT</span>
+        </div>
+    </header>
+    <!-- Image principale du projet -->
+    <section class="container mx-auto px-4 mb-12">
+        <figure class="rounded-lg overflow-hidden shadow-lg max-h-80">
+            <img src="assets/images/stage2/page-principal-accueil.png" alt="Application gestion des évaluations" class="w-full h-80 object-cover" width="1000" height="320" />
+            <figcaption class="text-center text-gray-600 mt-2">Page d'accueil de l'application de gestion des évaluations</figcaption>
+        </figure>
+    </section>
+    <!-- Informations du projet et traces -->
+    <section class="container mx-auto px-4 mb-16">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Colonne de gauche (2/3) : Informations principales + Traces -->
+            <div class="md:col-span-2 flex flex-col gap-6">
+                <div class="bg-white rounded-lg shadow-sm p-6 flex-1">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Présentation du projet</h2>
+                    <p class="text-gray-700 mb-6">
+                        Ce projet de stage a consisté à concevoir et développer une application web permettant de centraliser la gestion des évaluations de soutenance à l'IUT Nord Franche-Comté. L'objectif était de remplacer les grilles papier et fichiers Excel par une plateforme moderne, ergonomique et sécurisée.
+                    </p>
+                    <ul class="list-disc pl-5 text-gray-700 mb-6">
+                        <li>Création et organisation des promotions, groupes et étudiants</li>
+                        <li>Formulaires d'évaluation dynamiques et personnalisés</li>
+                        <li>Saisie, suivi et consultation des notes en ligne</li>
+                        <li>Export des résultats au format CSV, Excel ou PDF</li>
+                        <li>Tableau de bord analytique et statistiques</li>
+                        <li>Interopérabilité avec ScoDoc (outil interne de gestion des étudiants)</li>
+                    </ul>
+                    <p class="text-gray-700 mb-6">
+                        L'ensemble de la stack technique a été développé, de la conception de la base de données à l'intégration du frontend, en passant par la sécurisation des accès et l'automatisation des exports.
+                    </p>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Défis et solutions</h3>
+                    <ul class="list-disc pl-5 text-gray-700 mb-6">
+                        <li>Gestion hiérarchique complexe (promo → groupe → sous-groupe → étudiant) : modélisation claire dans MongoDB et API optimisées.</li>
+                        <li>Évaluations mixtes (étudiant + groupe) : conception flexible des formulaires.</li>
+                        <li>Interopérabilité avec ScoDoc : exports CSV normalisés compatibles.</li>
+                        <li>Prise en main rapide de Vue.js, Vuetify et Express.js.</li>
+                    </ul>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Résultats obtenus</h3>
+                    <ul class="list-disc pl-5 text-gray-700 mb-6">
+                        <li>Application fonctionnelle et ergonomique déployée en interne</li>
+                        <li>Réduction des erreurs et des doublons</li>
+                        <li>Gain de temps pour les enseignants</li>
+                        <li>Amélioration de la traçabilité et de la centralisation des résultats</li>
+                    </ul>
+                </div>
+                <!-- Bloc traces -->
+                <div class="bg-white rounded-lg shadow-sm p-6 flex-1 mt-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Traces du projet</h2>
+                    <div class="flex flex-col gap-8 mb-6">
+                        <!-- Trace 1 : Tableau de bord analytique -->
+                        <figure>
+                            <img src="assets/images/stage2/Tableau-de-Bord-Part1.png" alt="Tableau de bord analytique" class="rounded-lg shadow-md w-full max-w-full" />
+                            <figcaption class="text-center text-gray-600 mt-2 font-semibold"><u>1. Tableau de bord analytique</u></figcaption>
+                            <p class="text-black mt-2">
+                                <strong>Commentaire :</strong> La figure <u>Tableau de bord analytique</u> présente la centralisation des indicateurs clés du système. L'agrégation automatique des données et les visualisations interactives permettent un pilotage efficace de l'activité pédagogique et un suivi en temps réel des évaluations.
+                                <ul class="list-disc pl-5 mt-2">
+                                    <li>Calcul automatisé des statistiques globales : étudiants, promotions, formulaires</li>
+                                    <li>Graphiques dynamiques pour l'analyse des tendances</li>
+                                    <li>Interface responsive adaptée aux différents dispositifs</li>
+                                </ul>
+                            </p>
+                        </figure>
+                        
+                        <h3 class="text-xl font-bold text-gray-800 mt-8 mb-4">Trace 2 – Organisation hiérarchique et gestion des entités</h3>
+                        <figure>
+                            <img src="assets/images/stage2/Page-de-gestion-des-promotions.png" alt="Gestion des promotions" class="rounded-lg shadow-md mb-6 md:mb-0" />
+                            <figcaption class="text-center text-gray-600 mt-2 font-semibold"><u>2. Gestion des promotions</u></figcaption>
+                            <p class="text-black mt-2">
+                                <strong>Commentaire :</strong> La figure <u>Gestion des promotions</u> illustre la modélisation hiérarchique complexe mise en place. La structuration des données permet une navigation fluide entre promotions, groupes et étudiants, optimisant la gestion des grandes volumétries académiques.
+                                <ul class="list-disc pl-5 mt-2">
+                                    <li>Organisation relationnelle des entités académiques</li>
+                                    <li>Interface de gestion centralisée et évolutive</li>
+                                    <li>Accès rapide aux informations associées</li>
+                                </ul>
+                            </p>
+                        </figure>
+                        
+                        <figure>
+                            <img src="assets/images/stage2/Page-de-gestion-des-groupes.png" alt="Gestion des groupes" class="rounded-lg shadow-md mb-6 md:mb-0" />
+                            <figcaption class="text-center text-gray-600 mt-2 font-semibold"><u>3. Gestion des groupes</u></figcaption>
+                            <p class="text-black mt-2">
+                                <strong>Commentaire :</strong> La figure <u>Gestion des groupes</u> démontre la flexibilité du système pour organiser les sous-groupes et gérer les affectations. Les fonctionnalités de recherche et de filtrage avancées facilitent l'administration collective des étudiants.
+                            </p>
+                        </figure>
+                        
+                        <h3 class="text-xl font-bold text-gray-800 mt-8 mb-4">Trace 3 – Automatisation et interopérabilité</h3>
+                        <figure>
+                            <img src="assets/images/stage2/Page-des-exports.png" alt="Exports des résultats" class="rounded-lg shadow-md mb-6 md:mb-0" />
+                            <figcaption class="text-center text-gray-600 mt-2 font-semibold"><u>4. Exports des résultats</u></figcaption>
+                            <p class="text-black mt-2">
+                                <strong>Commentaire :</strong> La figure <u>Exports des résultats</u> met en avant l'automatisation du processus d'exportation. La génération de fichiers CSV, Excel et PDF assure l'interopérabilité avec les outils institutionnels comme ScoDoc, simplifiant les délibérations et le traitement des données.
+                                <ul class="list-disc pl-5 mt-2">
+                                    <li>Exports multi-formats adaptés aux besoins institutionnels</li>
+                                    <li>Compatibilité garantie avec les systèmes existants</li>
+                                    <li>Traçabilité et sécurisation des données exportées</li>
+                                </ul>
+                            </p>
+                        </figure>
+                        
+                        <h3 class="text-xl font-bold text-gray-800 mt-8 mb-4">Trace 4 – Sécurisation et authentification</h3>
+                        <figure>
+                            <img src="assets/images/stage2/Connexion.png" alt="Page de connexion" class="rounded-lg shadow-md mb-6 md:mb-0" />
+                            <figcaption class="text-center text-gray-600 mt-2 font-semibold"><u>5. Page de connexion</u></figcaption>
+                            <p class="text-black mt-2">
+                                <strong>Commentaire :</strong> La figure <u>Page de connexion</u> présente l'interface d'authentification sécurisée. L'implémentation de JWT garantit la protection des sessions et la confidentialité des données sensibles, avec une gestion différenciée des droits selon le profil utilisateur.
+                            </p>
+                        </figure>
+                        
+                        <figure>
+                            <img src="assets/images/stage2/Inscription.png" alt="Page d'inscription" class="rounded-lg shadow-md mb-6 md:mb-0" />
+                            <figcaption class="text-center text-gray-600 mt-2 font-semibold"><u>6. Page d'inscription</u></figcaption>
+                            <p class="text-black mt-2">
+                                <strong>Commentaire :</strong> La figure <u>Page d'inscription</u> illustre le processus de création de comptes avec validation des champs et intégration directe à MongoDB. L'interface garantit la fiabilité des informations saisies et une expérience utilisateur optimisée.
+                            </p>
+                        </figure>
+                        
+                        <h3 class="text-xl font-bold text-gray-800 mt-8 mb-4">Trace 5 – Architecture technique : routage et modélisation</h3>
+                        <figure>
+                            <img src="assets/images/stage2/code-routage-applicattion-frontend.png" alt="Routage frontend" class="rounded-lg shadow-md mb-6 md:mb-0" />
+                            <figcaption class="text-center text-gray-600 mt-2 font-semibold"><u>7. Architecture de routage frontend</u></figcaption>
+                            <p class="text-black mt-2">
+                                <strong>Commentaire :</strong> La figure <u>Architecture de routage frontend</u> démontre la structure modulaire de l'application Vue.js. La définition des routes et la gestion de la navigation assurent une expérience utilisateur fluide et une architecture évolutive.
+                            </p>
+                        </figure>
+                        
+                        <figure>
+                            <img src="assets/images/stage2/code-Modèle-Form.png" alt="Modélisation des formulaires" class="rounded-lg shadow-md mb-6 md:mb-0" />
+                            <figcaption class="text-center text-gray-600 mt-2 font-semibold"><u>8. Modélisation des formulaires</u></figcaption>
+                            <p class="text-black mt-2">
+                                <strong>Commentaire :</strong> La figure <u>Modélisation des formulaires</u> présente la conception flexible des schémas d'évaluation. La structure modulaire permet de créer des formulaires personnalisés adaptés aux différents types d'évaluations (individuelle, collective, mixte).
+                            </p>
+                        </figure>
+                        
+                        <figure>
+                            <img src="assets/images/stage2/code-Route-gestion-des-formulaire-backend.png" alt="API backend formulaires" class="rounded-lg shadow-md mb-6 md:mb-0" />
+                            <figcaption class="text-center text-gray-600 mt-2 font-semibold"><u>9. API de gestion des formulaires</u></figcaption>
+                            <p class="text-black mt-2">
+                                <strong>Commentaire :</strong> La figure <u>API de gestion des formulaires</u> illustre l'implémentation des routes Express.js pour la gestion des formulaires. La pagination, les filtres et la sécurisation des endpoints garantissent des performances optimales et une robustesse du système.
+                            </p>
+                        </figure>
+                        
+                        <figure>
+                            <img src="assets/images/stage2/code-login-frontend.png" alt="Code authentification frontend" class="rounded-lg shadow-md mb-6 md:mb-0" />
+                            <figcaption class="text-center text-gray-600 mt-2 font-semibold"><u>10. Code d'authentification frontend</u></figcaption>
+                            <p class="text-black mt-2">
+                                <strong>Commentaire :</strong> La figure <u>Code d'authentification frontend</u> présente l'implémentation Vue.js pour la gestion des connexions utilisateur. La validation des formulaires et la gestion des états assurent une sécurité robuste et une expérience utilisateur fluide.
+                            </p>
+                        </figure>
+                        
+                        <figure>
+                            <img src="assets/images/stage2/code-Menu-Frontend-de-l'application.png" alt="Menu frontend dynamique" class="rounded-lg shadow-md mb-6 md:mb-0" />
+                            <figcaption class="text-center text-gray-600 mt-2 font-semibold"><u>11. Menu frontend dynamique</u></figcaption>
+                            <p class="text-black mt-2">
+                                <strong>Commentaire :</strong> La figure <u>Menu frontend dynamique</u> illustre la génération automatique du menu en fonction du rôle utilisateur. Cette approche garantit un accès sécurisé aux fonctionnalités et une interface adaptée aux permissions de chaque profil.
+                            </p>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <!-- Colonne de droite (1/3) : Détails techniques et liens -->
+            <div class="space-y-8">
+                <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+                    <h2 class="text-xl font-bold text-gray-800 mb-4">Détails Techniques</h2>
+                    <div class="mb-6">
+                        <h3 class="font-medium text-gray-800 mb-2">Technologies Utilisées</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <div class="w-8 h-8 flex items-center justify-center text-green-600 mr-3">
+                                    <i class="ri-vuejs-line ri-lg"></i>
+                                </div>
+                                <span class="text-gray-700">Vue.js (Frontend)</span>
+                            </li>
+                            <li class="flex items-center">
+                                <div class="w-8 h-8 flex items-center justify-center text-blue-600 mr-3">
+                                    <i class="ri-material-ui-fill ri-lg"></i>
+                                </div>
+                                <span class="text-gray-700">Vuetify (UI)</span>
+                            </li>
+                            <li class="flex items-center">
+                                <div class="w-8 h-8 flex items-center justify-center text-yellow-600 mr-3">
+                                    <i class="ri-nodejs-line ri-lg"></i>
+                                </div>
+                                <span class="text-gray-700">Node.js (Backend)</span>
+                            </li>
+                            <li class="flex items-center">
+                                <div class="w-8 h-8 flex items-center justify-center text-indigo-600 mr-3">
+                                    <i class="ri-server-line ri-lg"></i>
+                                </div>
+                                <span class="text-gray-700">Express.js (API)</span>
+                            </li>
+                            <li class="flex items-center">
+                                <div class="w-8 h-8 flex items-center justify-center text-purple-600 mr-3">
+                                    <i class="ri-database-2-line ri-lg"></i>
+                                </div>
+                                <span class="text-gray-700">MongoDB (Base de données)</span>
+                            </li>
+                            <li class="flex items-center">
+                                <div class="w-8 h-8 flex items-center justify-center text-gray-600 mr-3">
+                                    <i class="ri-shield-keyhole-line ri-lg"></i>
+                                </div>
+                                <span class="text-gray-700">JWT (Sécurité)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-sm p-6">
+                    <h2 class="text-xl font-bold text-gray-800 mb-4">Liens du Projet</h2>
+                    <ul class="space-y-4">
+                        <li>
+                            <a href="https://github.com/Evalmeiutnfc/Frontend" class="flex items-center text-black hover:text-primary/80 transition-colors" target="_blank">
+                                <div class="w-8 h-8 flex items-center justify-center text-green-600 mr-3">
+                                    <i class="ri-github-fill ri-lg"></i>
+                                </div>
+                                <span>Frontend (GitHub)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Evalmeiutnfc/Backend" class="flex items-center text-black hover:text-primary/80 transition-colors" target="_blank">
+                                <div class="w-8 h-8 flex items-center justify-center text-blue-600 mr-3">
+                                    <i class="ri-github-fill ri-lg"></i>
+                                </div>
+                                <span>Backend (GitHub)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:majoiefaya@gmail.com" class="flex items-center text-black hover:text-primary/80 transition-colors">
+                                <div class="w-8 h-8 flex items-center justify-center text-pink-600 mr-3">
+                                    <i class="ri-mail-line ri-lg"></i>
+                                </div>
+                                <span>Contactez-moi</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p>© FAYA Lidao Majoie – Portfolio – 2025</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="https://www.linkedin.com/in/lidao-majoie-faya-064ba622a/" target="_blank"
+                        class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
+                        <i class="ri-linkedin-line ri-lg"></i>
+                    </a>
+                    <a href="https://github.com/majoiefaya" target="_blank"
+                        class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors"
+                        data-readdy="true">
+                        <i class="ri-github-line ri-lg"></i>
+                    </a>
+                    <a href="mailto:majoiefaya@gmail.com"
+                        class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
+                        <i class="ri-mail-line ri-lg"></i>
+                    </a>
+                    <span class="flex items-center text-white ml-2">
+                        <i class="ri-phone-line ri-lg mr-2"></i>+33 758225308
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/mobileMenu.js"></script>
+</body>
+</html>
